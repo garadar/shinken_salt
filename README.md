@@ -11,6 +11,9 @@ The state monitoring will deploy all the shinken stack:
 - thruk.sls:    State to deploy thruk web GUI.
 
 Some state include other state not described here. But nevermind it should be working fine.
+
 You need to add all your conf file in:
 
   `$ mkdir -p ./files/{usr/lib64,etc/{thruk,sudoers.d,cron.d,shinken,httpd,nrpe.d}}`
+
+Or remove state_id which include file configuration.
